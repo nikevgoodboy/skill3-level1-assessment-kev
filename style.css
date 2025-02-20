@@ -13,21 +13,24 @@ header {
     text-align: center;
 }
 
-#section-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.w3schools.com/howto/photographer.jpg");
-  height: 40vh;
+section {
+  background-image: url("images/resource-tti-13.webp");
+  height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
 }
-
-div h2 {
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+h2 {
     text-align: center;
 }
 
-.nav-list {
+ul{
     list-style: none;
     padding: 0;
     display: flex;
@@ -35,7 +38,7 @@ div h2 {
     gap: 15px;
 }
 
-.nav-list li a {
+li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -44,7 +47,7 @@ div h2 {
 .gallery-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 40px 20px;
     flex-wrap: wrap;
 }
@@ -62,16 +65,23 @@ div h2 {
     justify-content: center;
 }
 
-.gallery-item img {
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
+main {
+    text-align: center;
+}
 
-.product-container {
-
+article {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
 }
 
 .product {
@@ -81,7 +91,7 @@ div h2 {
   background: #f4f4f4;
   padding: 15px;
   border-radius: 8px;
-  flex: 1 1 400px;
+  flex: 400px;
 }
 .product img {
     width: 120px;
@@ -96,12 +106,6 @@ div h2 {
     flex: 1;
     overflow: hidden;
 }
-.product-info h3 {
-    font-size: 1.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 .product-info p {
     font-size: 1rem;
     line-height: 1.4;
@@ -109,32 +113,32 @@ div h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 
 @media (max-width: 768px) {
   .product-list {
-      /* grid-template-columns: 1fr; */
+      grid-template-columns: 1fr;
   }
   .product {
       flex-direction: column;
       text-align: center;
   }
   .product img {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
   }
   .product-info h3 {
       font-size: 1rem;
   }
   .product-info p {
       font-size: 0.9rem;
-      -webkit-line-clamp: 1;
+      -webkit-line-clamp: 4;
   }
 }
 
-.footer {
+footer {
     text-align: center;
     padding: 20px;
     background: #343a40;
